@@ -4,7 +4,7 @@ metadata:
   name: promocode-factory-api
   labels:
     app: factory-api
-    version: "12.2020"
+    version: "2023"
   annotations:
 spec:
   replicas: 2
@@ -57,7 +57,7 @@ metadata:
   name: promocode-factory-api-service
   labels:
     app: factory-api
-    version: "12.2020"
+    version: "2023"
 spec:
   type: LoadBalancer
   ports:
@@ -73,7 +73,7 @@ metadata:
   name: promocode-factory-api-settings
   labels:
     app: factory-api
-    version: "12.2020"
+    version: "2023"
     env: dev
 data:
   appsettings.json: |
@@ -86,12 +86,3 @@ data:
        },
        "AllowedHosts": "*"
     }
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: private-repo-secret
-type: kubernetes.io/dockerconfigjson
-data:
-  .dockerconfigjson: UmVhbGx5IHJlYWxseSByZWVlZWVlZWVlZWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGx5eXl5eXl5eXl5eXl5eXl5eXl5eSBsbGxsbGxsbGxsbGxsbG9vb29vb29vb29vb29vb29vb29vb29vb29vb25ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cgYXV0aCBrZXlzCg
-
