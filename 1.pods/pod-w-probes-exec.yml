@@ -4,7 +4,7 @@ metadata:
   name: promocode-factory-api
   labels:
     app: factory-api
-    version: "12.2020"
+    version: "2023"
 spec:
   containers:
   - name: promocode-factory-api

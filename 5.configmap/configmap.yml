@@ -4,7 +4,7 @@ metadata:
   name: promocode-factory-api-settings
   labels:
     app: factory-api
-    version: "12.2020"
+    version: "2023"
     env: dev
 data:
   storageConstr: "storageConnectionSting"
